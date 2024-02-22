@@ -3,31 +3,33 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="styles/main.css">
 	
-	<title>Document</title>
+	<title>F &bullet; R &bullet; I &bullet; E &bullet; N &bullet; D &bullet; S</title>
 </head>
 
 <body>
 	<header>
+		<img src="images/logo.jpg" alt="FRIENDS LOGO">
 		<h2>F &bullet; R &bullet; I &bullet; E &bullet; N &bullet; D &bullet; S</h2>
-	</header>
+	</header> 
 
 	<nav id="nav_menu">
 		<ul>
-			<li><a href=".">Ross</a></li>
-			<li><a href=".">Rachel</a></li>
-			<li><a href=".">Monica</a></li>
-			<li><a href=".">Chandler</a></li>
-			<li><a href=".">Joey</a></li>
-			<li id="last"><a href=".">Phoebe</a></li>
+			<li><a href="ross.html">Ross</a></li>
+			<li><a href="rachel.html">Rachel</a></li>
+			<li><a href="monica.html">Monica</a></li>
+			<li><a href="chandler.html">Chandler</a></li>
+			<li><a href="joey.html">Joey</a></li>
+			<li id="last"><a href="phoebe.html">Phoebe</a></li>
 		</ul>
 	</nav>
 
-	<h1>Could this website BE any more clich&eacute;?</h1>
+	<h1>Could this website <span class="italicized">BE</span> any more clich&eacute;?</h1>
 
 	<main>
 
-		<section>
+		<section class="clearfix">
 			<img src="images/pivot.gif">
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque semper lacinia velit at finibus. Quisque felis dolor, placerat at tempus ut, mollis a tellus. Aenean tortor enim, dictum sed felis a, molestie euismod enim. Vestibulum fermentum mi quis ante pulvinar, at eleifend ipsum cursus. Nunc ultricies convallis porta. In non convallis augue. Mauris luctus gravida ipsum, vel dictum magna rutrum eu. Nulla facilisi. Morbi lobortis enim vitae lectus pulvinar, at hendrerit eros porttitor.</p>
 			<p>Donec vulputate facilisis dignissim. Nulla dapibus nisi urna, ac accumsan magna bibendum in. Sed tincidunt, nulla quis finibus efficitur, justo libero consequat orci, eget porta augue ex eu magna. Nullam vestibulum, nisi ac tempor varius, est velit efficitur lectus, non aliquam turpis felis a sem. Nam cursus dolor non mauris tincidunt blandit eu at mi. Sed dapibus pulvinar nisi a posuere. Nulla pulvinar aliquam suscipit. Duis metus nibh, ultrices at odio sed, interdum fringilla libero. Phasellus viverra, augue ornare consequat semper, erat turpis viverra justo, in porttitor erat diam nec arcu. Duis tempor, lacus sed porttitor rutrum, ligula est feugiat lacus, efficitur blandit nibh enim vitae dui. Maecenas euismod nisi ac orci semper aliquam.</p>
@@ -49,9 +51,13 @@
 	</main>
 
 	<footer>
-		<p>&copy; <span></span> [your-name-here] Productions</p>
+		<p>&copy; <span id="copyrightyear"></span> Zack Gaylord Productions</p>
 	</footer>
 
 </body>
 </html>
+<script>
+	const d = new Date();
+	document.getElementById('copyrightyear').innerHTML = d.getFullYear();
+ </script>
 

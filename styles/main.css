@@ -3,3 +3,160 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+
+.italicized{
+    font-style: italic;
+}
+
+html{
+    background-color: white;
+    background-image: url(../images/bgtile.jpg);
+    background-attachment: fixed;
+
+}
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: azure;
+    border: 3px solid darkblue;
+
+}
+
+header{
+    display: flex;
+    align-items: center;
+    border-bottom: 3px solid darkblue;
+}
+
+header img{
+    max-width: 200px;
+    border-radius: 50%;
+    padding: 1em;
+}
+
+header h2{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-style: italic;
+}
+
+#nav_menu{
+    background-color: darkblue;
+    border-bottom: 3px solid darkblue;
+
+}
+
+#nav_menu ul{
+    list-style-type: none;
+    display: flex;
+}
+
+#nav_menu li{
+    width: 16.66%;
+
+}
+
+#nav_menu a{
+    display: block;
+    text-align: center;
+    padding-block: .75em;
+    text-decoration: none;
+    color: white;
+    font-size: 110%;
+    font-weight: bold;
+    font-variant: small-caps;
+    transition: ease-in-out 300ms;
+}
+
+#nav_menu a:hover{
+    color: black;
+    background-color: azure;
+
+}
+
+h1{
+    text-align: center;
+    font-size: 250%;
+    padding-block: 1em;
+
+}
+
+main{
+    display: flex;
+    gap: 2.5em;
+
+}
+
+section{
+    width: 80%;
+
+}
+
+section p{
+    padding: 0 1em .75em;
+}
+
+section img{
+    float: left;
+    padding: 0 1em .5em;
+
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+aside{
+    width: 20%;
+}
+
+aside ul{
+    width: 90%;
+    list-style: none;
+    background-color: darkblue;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    padding: 1em;
+    border-radius: 5px;
+    box-shadow: -2px 2px 10px 2px gray;
+}
+
+aside h3{
+    text-align: center;
+    margin-bottom: .5em;
+
+}
+
+aside a{
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+
+}
+
+aside a:hover{
+    color: yellow;
+
+}
+
+footer{
+    background-color: darkblue;
+
+}
+
+footer p{
+    padding-block: 1em;
+    color: white;
+    font-size: 85%;
+    font-weight: bold;
+    font-variant: small-caps;
+    text-align: center;
+}
